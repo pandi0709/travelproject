@@ -1,0 +1,437 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth; 
+    // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 400 to 700
+
+.lora-<uniquifier> {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} 
+}
+#navbar{
+    background-color: rgb(3, 3, 3);
+
+}
+#logo{
+    font-size: 37px;
+    font-weight: 400;
+    color: rgb(34, 150, 63);
+    text-shadow:0px, 1px, 1px black ;
+    margin-bottom: 4px;
+
+}
+#logo span{
+    color: orange;
+}
+.navbar-toggler span{
+    color: orange;
+}
+.navbar-nav{
+    margin-left: 20px;
+}
+.nav-item .nav-link{
+    font-size: 17px;
+    font-weight: 440px;
+    color: rgb(129, 126, 126);
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.4s ease;
+}
+.nav-item .nav-link:hover{
+    background: orange;
+    color: white;
+}
+#navbar button{
+    background: white;
+    color:orange;
+    border: none;
+}
+
+
+/*home start*/
+.home{
+    width: 100%;
+    height: 100vh;
+    background-image: url(back.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home .content{
+    text-align: center;
+    padding-top: 200px;
+}
+.home .content h4{
+    color: rgb(8, 60, 231);
+    font-size: 38px;
+    font-weight: 700;
+    text-shadow: 0px, 1px, 1px black;
+}
+.home .content h1{
+color: rgb(8, 62, 240);
+font-size: 70px;
+font-weight: 600;
+text-shadow: 7px, 7px, 9px black;
+margin-top: 4px;
+
+}
+.changecontent::after{
+    content: " ";
+    color: orange;
+    font-weight: 700;
+    text-shadow:  0px, 1px, 1px black rgba(0, 2, 4, 4);
+    animation: changetext 10s infinite linear;
+}
+@keyframes changetext{
+    0%{content:"France";}
+    10%{content:"United State";}
+    20%{content:"Tokyo";}
+    30%{content:"Russia";}
+    40%{content:"S.Korea";}
+    50%{content:"Spain";}
+    60%{content:"Italy";}
+    70%{content:"Mexico";}
+    80%{content:"Japan";}
+    90%{content:"Newyork";}
+    100%{content:"China";}
+}
+.home .content p{
+    color: rgb(243, 227, 0);
+    font-size: 30px;
+    font-weight: 600;
+    text-shadow:  0px, 1px, 1px black;
+    margin-bottom: 30px;
+    margin-top: 4px;
+}
+.home .content a{
+    padding: 10px;
+    color: rgb(207, 189, 27);
+    letter-spacing: 2px;
+    font-weight: 700;
+    border: none;
+    border-radius: 9px;
+    text-decoration: none;
+    transition: 0.4s ease;
+}
+.home .content a:hover{
+    background: orange;
+    color: white;
+
+}
+@media(max-width:840px){
+    .home{
+        background-position: 40%;
+    }
+    .home .content h4{
+        font-size: 27px;
+    }
+    .home .content h1{
+        font-size: 38px;
+    }
+    .home .content p{
+        font-size: 13px;
+    }
+}
+
+/*card*/
+
+.card-container{
+    display: flex;
+    margin: 20px;
+    text-align: center;
+    flex-wrap: wrap;
+    color: rgb(39, 170, 115);
+    background-image: url(cardback.jpeg.opdownload);
+}
+.card-container .card h4{
+    color: rgb(16, 202, 72);
+    padding-top: 40px;
+    font-size: 30px;
+} 
+.card-container .card p{
+    margin-bottom: 100px;
+}
+.card-container .card{
+    background-color: rgb(66, 56, 56);
+    justify-content: center;
+    width: 324px;
+    height: 170px;
+    margin-top: 30px;
+    border-radius: 9px;
+    overflow: hidden;
+    box-sizing: border-box;
+    box-shadow: 0px 3px 4px rgba(0, 4, 2, 2);
+    margin: 20px;
+}
+@media(max-width:840px){
+    .home{
+        background-position: 40%;
+    }
+    .home .content h4{
+        font-size: 27px;
+    }
+    .home .content h1{
+        font-size: 38px;
+    }
+    .home .content p{
+        font-size: 13px;
+    }
+}
+
+/*book start*/
+
+#book{
+    background-image: url(backround.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 74px 0px;
+}
+.form-box{
+    background-color: rgba(277, 277, 277, 0.7);
+    backdrop-filter: white(30px);
+    border-radius: 20px;
+    border: 1px solid chartreuse;
+}
+.form-box input{
+    border-radius: 10px;
+}
+.form-box input:focus{
+    box-shadow: 0 0 0;
+    border: 1px solid #f7288c;
+}
+.form-box select{
+    border-radius: 10px;
+}
+.form-box select:focus{
+    box-shadow: 0 0 0;
+    border: 1px solid #f7288c;
+}
+.input-group-text{
+    border-radius: 0px 10px 10px 0px;
+}
+.register{
+    background-image: linear-gradient(to right, #63118b , #f80f88 , #f80f88);
+    border: none;
+    border-radius: 10px;
+}
+.link{
+    text-decoration: none;
+    color: #63118b;
+}
+.link:hover{
+    color: #f80f88;
+}
+
+.text h1{
+    font-size: 40px;
+    color: #63118b;
+}
+.text h2{
+    color: #f80f88;
+}
+
+@media screen and (max-width: 992px){
+    .text{
+        margin-bottom: 40px;
+    }
+}
+@media screen and (max-width: 767px){
+    .form-box{
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+    .text h1{
+        font-size: 30px;
+    }
+    .text h2{
+        font-size: 20px;
+    }
+}
+
+/* book end */
+
+
+/*packages*/
+
+.main-txt h1{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px rgb(235, 227, 227);
+}
+.main-txt h1 span{
+    color: chartreuse;
+}
+.packages .card{
+    border-radius: 4px;
+    border: none;
+    box-shadow: rgba(224, 217, 217, 0.7) 0px 4px 12px;
+}
+.packages .card img{
+    border-radius: 4px;
+}
+.packages .card .card-body{
+    background: transparent;
+}
+.packages .card .card-body h3{
+    font-size: 24px;
+    font-weight: 600;
+}
+.packages .card .card-body p{
+    font-size: 14px;
+}
+.checked{
+    color: orangered;
+}
+.star i{
+    font-size: 14px;
+}
+.packages .card .card-body h6{
+    font-size: 20px;
+}
+.packages .card .card-body p{
+    padding: 10px;
+    text-decoration: none;
+    background: orange;
+    color: aliceblue;
+    border-radius: 4px;
+}
+/* packages end */
+
+
+/* service start */
+
+.services{
+    background-color: rgb(250, 252, 249);
+    margin-top: 1px;
+}
+.services .card{
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    border: none;
+    cursor: pointer;
+}
+.services .card i{
+    font-size: 80px;
+    text-align: center;
+    color: orange;
+    margin-top: 20px;
+}
+.services .card .card-body h3{
+    font-weight: 600;
+}
+.services .card .card-body{
+    text-align: center;
+}
+
+/* service end */
+
+
+/* gallary start */
+
+
+.gallary{
+    margin-top: 50px;
+} 
+.gallary .card{
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    cursor: pointer;
+}
+.gallary .card img{
+    border-radius: 10px;
+    transition: 0.4s;
+}
+.gallary .card img:hover{
+    transform: scale(1.1);
+}
+/* gallary end */
+
+/* about us start */
+
+.about{
+    padding: 40px;
+    margin-top: 40px;
+    background: white;
+}
+.about .card{
+    border-radius: 10px;
+}
+.about .card img{
+    border-radius: 10px;
+
+}
+.about h2{
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.about p{
+    font-weight: 400px;
+}
+.about h2 span{
+    color: #f7288c;
+}
+#about-btn{
+    width: 140px;
+    height: 38px;
+    border: none;
+    border-radius: 4px;
+    background: orange;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 500;
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+#about-btn:hover{
+    width: 170px;
+    color: chartreuse;
+}
+@media (max-width: 765px){
+    .about{
+        padding: 0;
+    }
+}
+
+/* aboutus end */
+
+/* footer start*/
+
+#footer{
+    width: 100%;
+    margin-top: 140px;
+    text-align: center;
+    background: rgb(248, 247, 246);
+}
+#footer h1{
+    font-weight: 600;
+    padding-top: 30px;
+    text-shadow: 0px 0px 1px black;
+}
+#footer h1 span{
+    color: orange;
+}
+.social-links i{
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 20px;
+    background: black;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: 0.4s ease;
+    cursor:pointer;
+}
+.social-links i:hover{
+    background: orange;
+}
+
+/* footer end */
+
+
